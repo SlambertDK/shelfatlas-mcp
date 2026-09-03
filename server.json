@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "dk.shelfatlas/catalog",
+  "name": "io.github.SlambertDK/shelfatlas-catalog",
   "description": "Danish grocery catalog as MCP tools: live offers across all major chains, stores, EAN lookup, stock.",
   "repository": {
     "url": "https://github.com/SlambertDK/shelfatlas-mcp",
