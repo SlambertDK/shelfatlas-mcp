@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "dk.shelfatlas/catalog",
+  "description": "Danish grocery catalog and shelf data as MCP tools: live offers across every major Danish chain, nearest-store geo search, product name and EAN lookup, and find_cheapest_offers — ask 'where is Pepsi Max cheapest right now?' and get structured, current answers. Free tier.",
+  "repository": {
+    "url": "https://github.com/SlambertDK/shelfatlas-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.shelfatlas.com/api/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer sa_live_<your-key> — create a free key at https://app.shelfatlas.com",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ]
+}
